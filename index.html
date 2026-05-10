@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mannan Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">Mannan<span class="highlight">Sharma</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#game">Take a Break</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero fade-in-section">
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="glitch-text">Mannan Sharma</h1>
+                <p class="subtitle">An aspiring software developer and AI enthusiast, currently building cool things in my second year at university.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="glass-card tech-stack-floating">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-python"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about fade-in-section">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-container glass-panel">
+                <div class="about-text">
+                    <p>I recently completed my second year at Manipal University Jaipur (MUJ). I'm still early in my software engineering journey, but what I lack in years of experience, I make up for with intense motivation and a rapid learning pace.</p>
+                    <p>I genuinely enjoy experimenting with modern development tools, especially AI-assisted workflows. In fact, this entire portfolio was rapidly prototyped using AI tools, demonstrating my ability to adopt emerging technologies to solve problems efficiently.</p>
+                    <p>I am seeking an internship where I can be a sponge—absorbing knowledge from experienced mentors, tackling challenging tasks, and making a meaningful contribution to a forward-thinking team.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-text">Projects Built</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-text">Learning Mode</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills fade-in-section">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <i class="fas fa-laptop-code skill-icon"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, React basics</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, Basic APIs</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fas fa-brain skill-icon"></i>
+                    <h3>AI & Tools</h3>
+                    <p>Prompt Engineering, Git, VS Code</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-assistant" class="ai-assistant fade-in-section">
+            <h2 class="section-title">AI Study <span class="highlight">Assistant</span></h2>
+            <div class="ai-container glass-panel glowing-border">
+                <div class="ai-header">
+                    <i class="fas fa-robot ai-icon"></i>
+                    <div class="ai-header-text">
+                        <h3>Nexus AI</h3>
+                        <p>Your personal learning companion</p>
+                    </div>
+                </div>
+                
+                <div class="ai-input-area ai-input-top">
+                    <input type="text" id="aiTopicInput" placeholder="Enter a topic..." autocomplete="off">
+                    <button class="btn primary-btn ai-generate-btn" id="aiGenerateBtn">
+                        <i class="fas fa-magic"></i> Generate
+                    </button>
+                </div>
+
+                <div class="ai-output-card glass-card" id="aiChatArea">
+                    <div class="ai-message system-msg">
+                        <div class="msg-avatar"><i class="fas fa-sparkles"></i></div>
+                        <div class="msg-content">Hello! I'm your AI study assistant. Enter a topic above to generate a custom study roadmap!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects fade-in-section">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-img placeholder-1"></div>
+                    <div class="project-info">
+                        <h3>AI Task Manager</h3>
+                        <p>A smart to-do list application that uses basic AI APIs to prioritize tasks and suggest
+                            completion times.</p>
+                        <div class="project-tags">
+                            <span>JS</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img placeholder-2"></div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather tracking dashboard with dynamic background changes based on the forecast.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>Fetch API</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img placeholder-3"></div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>This very website! Designed with modern aesthetics, glassmorphism, and responsive principles.
+                        </p>
+                        <div class="project-tags">
+                            <span>UI/UX</span>
+                            <span>CSS Animations</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game" class="game-section fade-in-section">
+            <h2 class="section-title">Take a <span class="highlight">Break</span></h2>
+            <div class="game-container glass-panel glowing-border">
+                <div class="game-header">
+                    <div class="score-board">Score: <span id="gameScore" class="highlight">0</span></div>
+                    <button class="btn primary-btn btn-sm" id="restartGameBtn">Restart</button>
+                </div>
+                <div class="canvas-wrapper">
+                    <canvas id="pacmanCanvas" width="400" height="400"></canvas>
+                    <div id="gameOverOverlay" class="game-overlay">
+                        <h3 id="overlayTitle">Pac-Man</h3>
+                        <p id="overlaySubtitle">Ready to play?</p>
+                        <button class="btn primary-btn" id="overlayRestartBtn">Play</button>
+                    </div>
+                </div>
+                <p class="game-instructions">Use <strong>Arrow Keys</strong> to eat data and avoid bugs. <br>Eat the big purple Power Pellets to fight back!</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact fade-in-section">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-container glass-panel">
+                <form class="contact-form" id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" required placeholder="Your Message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="#" class="social-btn glass-card"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-btn glass-card"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn glass-card"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn glass-card"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="contact-text">Currently seeking internship opportunities for the upcoming term. Let's
+                        connect!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mannan Sharma. Built with passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
